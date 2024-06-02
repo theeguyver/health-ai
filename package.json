@@ -1,0 +1,50 @@
+{
+  "name": "spaceportfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@react-google-maps/api": "^2.19.3",
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.19.2",
+    "mongodb": "^6.6.1",
+    "multer": "^1.4.5-lts.1",
+    "next": "^14.0.4",
+    "next-auth": "^4.24.6",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "use-places-autocomplete": "^4.0.1"
+  },
+  "devDependencies": {
+    "@react-three/drei": "^9.90.2",
+    "@react-three/fiber": "^8.15.4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6",
+    "framer-motion": "^10.16.16",
+    "maath": "^0.10.4",
+    "node-polyfill-webpack-plugin": "^3.0.0",
+    "postcss": "^8",
+    "react-intersection-observer": "^9.5.2",
+    "tailwindcss": "^3",
+    "three": "^0.157.0",
+    "typescript": "^5"
+  }
+}

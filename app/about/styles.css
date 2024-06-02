@@ -1,0 +1,79 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #1e1e1e;
+  min-height: 100vh;
+  display: flex;
+  color: rgb(243, 241, 239);
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  font-size: 1.3rem;
+  border-radius: 10px;
+  width: 85%;
+  padding: 50px;
+  box-shadow: 0 54px 55px rgb(78 78 78 / 25%), 0 -12px 30px rgb(78 78 78 / 25%),
+    0 4px 6px rgb(78 78 78 / 25%), 0 12px 13px rgb(78 78 78 / 25%),
+    0 -3px 5px rgb(78 78 78 / 25%);
+}
+
+.container input {
+  font-size: 1.2rem;
+  margin: 10px 0 10px 0px;
+  border-color: rgb(31, 28, 28);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e8f0fe;
+}
+
+.container textarea {
+  margin: 10px 0 10px 0px;
+  padding: 5px;
+  border-color: rgb(31, 28, 28);
+  border-radius: 5px;
+  background-color: #e8f0fe;
+  font-size: 20px;
+}
+
+.container h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.name div {
+  display: flex;
+  flex-direction: column;
+}
+
+.block button {
+  padding: 10px;
+  font-size: 20px;
+  width: 30%;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+textarea {
+  resize: none;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get User Location</title>
+<style>
+  /* Style for map container */
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+<button onclick="getLocation()">Get Location</button>
+<div id="map"></div>
+
+<script>
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(findNearbyHospitals, showError);
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+function findNearbyHospitals(position) {
+  var latitude = position.coords.latitude;
+  var longitude = position.coords.longitude;
+  
+  fetch('https://nominatim.openstreetmap.org/reverse?lat=' + latitude + '&lon=' + longitude + '&format=json')
+    .then(response => response.json())
+    .then(data => {
+      var cityName = data.address.city;
+      if (!cityName) {
+        cityName = data.address.town || data.address.village || data.address.hamlet || data.address.locality;
+      }
+      alert("City: " + cityName);
+      
+      // Display map with user's location and nearby hospitals
+      displayMap(latitude, longitude);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert("Error occurred while fetching city name.");
+    });
+}
+
+function displayMap(latitude, longitude) {
+  // Create map centered at user's location
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: latitude, lng: longitude},
+    zoom: 14
+  });
+
+  // Add marker for user's location
+  var userMarker = new google.maps.Marker({
+    position: {lat: latitude, lng: longitude},
+    map: map,
+    title: 'Your Location'
+  });
+
+  // Fetch nearby hospitals and add markers for each hospital
+  fetch('https://overpass-api.de/api/interpreter?data=[out:json];node(around:' + latitude + ',' + longitude + ',10000)[amenity=hospital];out;')
+    .then(response => response.json())
+    .then(data => {
+      data.elements.forEach(hospital => {
+        var marker = new google.maps.Marker({
+          position: {lat: hospital.lat, lng: hospital.lon},
+          map: map,
+          title: hospital.tags.name
+        });
+      });
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert("Error occurred while fetching nearby hospitals.");
+    });
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      alert("User denied the request for Geolocation.");
+      break;
+    case error.POSITION_UNAVAILABLE:
+      alert("Location information is unavailable.");
+      break;
+    case error.TIMEOUT:
+      alert("The request to get user location timed out.");
+      break;
+    case error.UNKNOWN_ERROR:
+      alert("An unknown error occurred.");
+      break;
+  }
+}
+</script>
+
+<!-- Include Google Maps API script -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI25vj01dFtR8dsIaeyoGX2ajrDEIfK60&callback=initMap" async defer></script>
+</body>
+</html>

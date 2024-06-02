@@ -1,0 +1,8 @@
+1234: ML Server
+2000: chatresponse.js [app/chatbot]
+3000: Database Server
+3001: Frontend
+3002: fetchuserdetails.js [app/user]
+3003: therapistsfetchdetails.js [app/library]
+3004: profilephotoupload.js [app/user]
+4002: chathistory.js [app/chatbot]
