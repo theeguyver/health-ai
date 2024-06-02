@@ -126,7 +126,7 @@ cd health-ai
 Before running the application, we need to install the required libraries and dependencies. These libraries provide the functionalities used in the project's code. We'll use `npm install` to install them.
 
 ```bash
-npm install mongodb express crypto cors
+npm install mongodb express crypto cors multer
 ```
 
 ### 3. Start the Servers
