@@ -1,4 +1,4 @@
-[Chatbot Icon](public\final.jpeg)
+![Chatbot Icon](https://github.com/theeguyver/health-ai/blob/master/public/chatbot_icon.jpg)
 # Health[.]AI 
 ## _Your Friendly Neighbourhood Therapy Chatbot_
 
