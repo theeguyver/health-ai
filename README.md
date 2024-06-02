@@ -104,6 +104,7 @@ This project requires the following tools and libraries to be set up on your dev
 * `express`: This library provides a framework for building web applications in Node.js.
 * `crypto`: This library provides cryptographic functions used for security purposes (e.g., password hashing).
 * `cors`: This library enables Cross-Origin Resource Sharing (CORS) which allows requests from different domains.
+* `multer`: This Node.js middleware enables the application to handle file uploads, which is required for profile photo upload for user profile.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
