@@ -326,9 +326,9 @@ We appreciate your contributions to this project!
 - [Shreelu Santosh](https://github.com/ShreeluSantosh)
 - [Anjali Kolhatkar](https://github.com/anjalikolhatkar)
 - [Priya Jha](https://github.com/priyajha2612)
-- [Gitisha Mishra]()
+- [Gitisha Mishra](https://github.com/gitishamishra)
 - [Prakashchand Choudhary](https://github.com/prakash279)
-- [Suchismita Dutta]()
+- [Suchismita Dutta](https://github.com/crack-head22)
 - [Akash Shivshankar Kharabe]()
 
 
