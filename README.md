@@ -31,6 +31,7 @@
 * [💻 Tech Stack](#tech-stack)
 * [⚙️ Getting Started](#getting-started)
 * [🧑‍💻 Development](#development)
+* [📸 Screenshots](#screenshots)
 * [➕ Contributions](#contributions)
 * [©️ License](#license)
 * [❤️ About US](#about-us)
@@ -287,7 +288,13 @@ The application exposes various API endpoints for different functionalities. Her
 | localhost:3003/therapists                         | Fetches therapist data from MongoDB                      |
 | localhost:4002/sessionhistory                      | Fetches details of previous chat sessions for reference  |
  | localhost:4002/addChat                      | Stores the chat history for current session in MongoDB  |
- 
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## 📸 Screenshots
+
+See all screenshots of our work here: <a href="https://github.com/theeguyver/health-ai/blob/master/Screenshots.md">Screenshots</a>
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## ➕ Contributions
