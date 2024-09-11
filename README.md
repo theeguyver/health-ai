@@ -18,6 +18,10 @@
  
 </p>
 
+<p align="center">
+ <img src="https://github.com/user-attachments/assets/48ccab65-cfb1-4837-9f4a-f873d9ba9c07" height="400">
+</p> 
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
@@ -27,6 +31,7 @@
 * [💻 Tech Stack](#tech-stack)
 * [⚙️ Getting Started](#getting-started)
 * [🧑‍💻 Development](#development)
+* [📸 Screenshots](#screenshots)
 * [➕ Contributions](#contributions)
 * [©️ License](#license)
 * [❤️ About US](#about-us)
@@ -283,7 +288,13 @@ The application exposes various API endpoints for different functionalities. Her
 | localhost:3003/therapists                         | Fetches therapist data from MongoDB                      |
 | localhost:4002/sessionhistory                      | Fetches details of previous chat sessions for reference  |
  | localhost:4002/addChat                      | Stores the chat history for current session in MongoDB  |
- 
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## 📸 Screenshots
+
+See all screenshots of our work here: <a href="https://github.com/theeguyver/health-ai/blob/master/Screenshots.md">Screenshots</a>
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## ➕ Contributions
@@ -326,9 +337,9 @@ We appreciate your contributions to this project!
 - [Shreelu Santosh](https://github.com/ShreeluSantosh)
 - [Anjali Kolhatkar](https://github.com/anjalikolhatkar)
 - [Priya Jha](https://github.com/priyajha2612)
-- [Gitisha Mishra]()
+- [Gitisha Mishra](https://github.com/gitishamishra)
 - [Prakashchand Choudhary](https://github.com/prakash279)
-- [Suchismita Dutta]()
+- [Suchismita Dutta](https://github.com/crack-head22)
 - [Akash Shivshankar Kharabe]()
 
 
